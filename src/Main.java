@@ -20,3 +20,23 @@ public class Main {
             System.out.print(str + " ");
         }
     }
+
+    public static String[] createNewArray(String[] originalArray) {
+        int count = 0;
+        for (String str : originalArray) {
+            if (str.length() <= 3) {
+                count++;
+            }
+        }
+
+        String[] newArray = new String[count];
+        int index = 0;
+        for (String str : originalArray) {
+            if (str.length() <= 3) {
+                newArray[index++] = str;
+            }
+        }
+
+        return newArray;
+    }
+}
