@@ -13,3 +13,10 @@ public class Main {
             originalArray[i] = scanner.next();
         }
 
+        String[] newArray = createNewArray(originalArray);
+
+        System.out.println("Новый массив строк с длиной <= 3 символов:");
+        for (String str : newArray) {
+            System.out.print(str + " ");
+        }
+    }
