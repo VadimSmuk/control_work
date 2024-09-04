@@ -19,3 +19,4 @@ public class Main {
         for (String str : newArray) {
             System.out.print(str + " ");
         }
+    }
